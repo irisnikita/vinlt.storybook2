@@ -8,6 +8,10 @@ const server = http.createServer(app);
 
 app.use(express.static(__dirname + '/application/build'))
 
+app.get('/', (req, res) => {
+    res.send('hdsfds')
+})
+
 server.listen(PORT,() => {
     console.log('app is running at port', PORT)
 })
